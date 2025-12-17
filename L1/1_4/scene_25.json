@@ -1,0 +1,97 @@
+{
+  "scene_id": 25,
+  "coordinate_system": {
+    "x": "right",
+    "y": "front",
+    "z": "up"
+  },
+  "cameras": {
+    "front_camera": {
+      "position": [
+        8,
+        1,
+        5
+      ],
+      "lookat": [
+        -1,
+        1,
+        1.5
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "focal": 20
+    },
+    "side_camera": {
+      "position": [
+        -1,
+        -8,
+        5
+      ],
+      "lookat": [
+        -1,
+        1,
+        1.5
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "focal": 20
+    },
+    "top_camera": {
+      "position": [
+        -1,
+        1,
+        10
+      ],
+      "lookat": [
+        -1,
+        1,
+        1.5
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "focal": 18
+    }
+  },
+  "images": {
+    "front_camera": "25_front_camera.png",
+    "side_camera": "25_side_camera.png",
+    "top_camera": "25_top_camera.png"
+  },
+  "objects": [
+    {
+      "name": "obj_0",
+      "tower_id": 0,
+      "shape": "sphere",
+      "size_name": "large",
+      "color_name": "green",
+      "material_name": "metal",
+      "position": [
+        2.0,
+        0.0,
+        0.7
+      ],
+      "orientation": "vertical",
+      "rotation_angle": 3.429685684470425
+    }
+  ],
+  "visibility": {
+    "front_camera": {
+      "obj_0": true
+    },
+    "side_camera": {
+      "obj_0": true
+    },
+    "top_camera": {
+      "obj_0": true
+    }
+  }
+}

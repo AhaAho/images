@@ -1,0 +1,6140 @@
+{
+  "config_file": "project/configs/L1_new.yaml",
+  "config": {
+    "seed": 42,
+    "resolution": [
+      512,
+      512
+    ],
+    "scene_num": 50,
+    "grid_size": 4,
+    "cell_size": 2.0,
+    "objects": [
+      "cube",
+      "sphere",
+      "cylinder"
+    ],
+    "object_color_options": {
+      "cube": [
+        "red",
+        "yellow"
+      ],
+      "sphere": [
+        "blue",
+        "green"
+      ],
+      "cylinder": [
+        "purple",
+        "brown"
+      ]
+    },
+    "min_total_objects": 1,
+    "max_total_objects": 4,
+    "min_towers": 1,
+    "max_towers": 4,
+    "max_tower_height": 5,
+    "cameras": [
+      {
+        "name": "front_camera",
+        "focal": 20,
+        "position": [
+          8,
+          1,
+          5
+        ],
+        "lookat": [
+          -1,
+          1,
+          1.5
+        ]
+      },
+      {
+        "name": "side_camera",
+        "focal": 20,
+        "position": [
+          -1,
+          -8,
+          5
+        ],
+        "lookat": [
+          -1,
+          1,
+          1.5
+        ]
+      },
+      {
+        "name": "top_camera",
+        "focal": 18,
+        "position": [
+          -1,
+          1,
+          10
+        ],
+        "lookat": [
+          -1,
+          1,
+          1.5
+        ]
+      }
+    ],
+    "output_dir": "project/output/L1/1_4"
+  },
+  "scenes": [
+    {
+      "scene_id": 0,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "0_front_camera.png",
+        "side_camera": "0_side_camera.png",
+        "top_camera": "0_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            -2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.353304971691044
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 1,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "1_front_camera.png",
+        "side_camera": "1_side_camera.png",
+        "top_camera": "1_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            -2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.7229091610641774
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 2,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "2_front_camera.png",
+        "side_camera": "2_side_camera.png",
+        "top_camera": "2_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            0.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.245467922310245
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "yellow",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            0.0,
+            1.05
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.658453343226424
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "brown",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            0.0,
+            2.1
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 4.678714133619876
+        },
+        {
+          "name": "obj_3",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            0.0,
+            3.15
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.2650935575914484
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "top_camera": {
+          "obj_0": false,
+          "obj_1": false,
+          "obj_2": true,
+          "obj_3": true
+        }
+      }
+    },
+    {
+      "scene_id": 3,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "3_front_camera.png",
+        "side_camera": "3_side_camera.png",
+        "top_camera": "3_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "blue",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 6.214142610101336
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            4.0,
+            1.75
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.452891353348798
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 1,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "red",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            -2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.7683855523893872
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        }
+      }
+    },
+    {
+      "scene_id": 4,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "4_front_camera.png",
+        "side_camera": "4_side_camera.png",
+        "top_camera": "4_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "purple",
+          "material_name": "rubber",
+          "position": [
+            -4.0,
+            0.0,
+            0.35
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 4.9249639098747275
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 5,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "5_front_camera.png",
+        "side_camera": "5_side_camera.png",
+        "top_camera": "5_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "green",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.7130690991364421
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            0.0,
+            1.75
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 6.1228578610580415
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            0.0,
+            2.8
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.5787747420470515
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": false,
+          "obj_2": true
+        }
+      }
+    },
+    {
+      "scene_id": 6,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "6_front_camera.png",
+        "side_camera": "6_side_camera.png",
+        "top_camera": "6_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            0.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.10989461333320842
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "purple",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            0.0,
+            1.05
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 5.601920052621099
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            0.0,
+            1.75
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.7898355020581471
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        }
+      }
+    },
+    {
+      "scene_id": 7,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "7_front_camera.png",
+        "side_camera": "7_side_camera.png",
+        "top_camera": "7_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "red",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.8910154470171816
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 8,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "8_front_camera.png",
+        "side_camera": "8_side_camera.png",
+        "top_camera": "8_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.107673792151342
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.4330884106919761
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 2,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            -4.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.605190004118828
+        },
+        {
+          "name": "obj_3",
+          "tower_id": 2,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "yellow",
+          "material_name": "metal",
+          "position": [
+            -4.0,
+            4.0,
+            1.75
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.490214265565964
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        }
+      }
+    },
+    {
+      "scene_id": 9,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "9_front_camera.png",
+        "side_camera": "9_side_camera.png",
+        "top_camera": "9_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "brown",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.245745701491584
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "brown",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            4.0,
+            2.1
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.28093492626948713
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 10,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "10_front_camera.png",
+        "side_camera": "10_side_camera.png",
+        "top_camera": "10_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            4.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.171754798935348
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            4.0,
+            1.4
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.16410411805297764
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            4.0,
+            2.8
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.3243109880011452
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "top_camera": {
+          "obj_0": false,
+          "obj_1": true,
+          "obj_2": true
+        }
+      }
+    },
+    {
+      "scene_id": 11,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "11_front_camera.png",
+        "side_camera": "11_side_camera.png",
+        "top_camera": "11_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "brown",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.319736797124013
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.5259070774887573
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 12,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "12_front_camera.png",
+        "side_camera": "12_side_camera.png",
+        "top_camera": "12_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.6400874454660332
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "blue",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.2823010703183297
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 13,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "13_front_camera.png",
+        "side_camera": "13_side_camera.png",
+        "top_camera": "13_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "purple",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            -2.0,
+            0.7
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 0.585016618793283
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 14,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "14_front_camera.png",
+        "side_camera": "14_side_camera.png",
+        "top_camera": "14_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "purple",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 6.183859774775005
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 15,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "15_front_camera.png",
+        "side_camera": "15_side_camera.png",
+        "top_camera": "15_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "metal",
+          "position": [
+            -4.0,
+            -2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.54883399287033
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 16,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "16_front_camera.png",
+        "side_camera": "16_side_camera.png",
+        "top_camera": "16_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.294026034817427
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            2.0,
+            2.1
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.8350103812535288
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 17,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "17_front_camera.png",
+        "side_camera": "17_side_camera.png",
+        "top_camera": "17_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "red",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.80588386149522
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            2.0,
+            2.1
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.9919301120521165
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 18,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "18_front_camera.png",
+        "side_camera": "18_side_camera.png",
+        "top_camera": "18_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "green",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            -2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.8904428866711094
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            -2.0,
+            1.75
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.1746152064779813
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 1,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            4.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.030616647461683
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        }
+      }
+    },
+    {
+      "scene_id": 19,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "19_front_camera.png",
+        "side_camera": "19_side_camera.png",
+        "top_camera": "19_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.180294497276386
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            -2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.139453974687354
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 1,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "green",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            -2.0,
+            1.05
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.512406659593903
+        },
+        {
+          "name": "obj_3",
+          "tower_id": 1,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "purple",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            -2.0,
+            1.75
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 3.1387734345027574
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        }
+      }
+    },
+    {
+      "scene_id": 20,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "20_front_camera.png",
+        "side_camera": "20_side_camera.png",
+        "top_camera": "20_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "blue",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.21208710057920416
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            4.0,
+            1.75
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.073153107680584
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 21,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "21_front_camera.png",
+        "side_camera": "21_side_camera.png",
+        "top_camera": "21_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "brown",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            0.0,
+            0.35
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 3.480514093619721
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "red",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.489698943730419
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 2,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "purple",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            -2.0,
+            0.35
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 0.30238943035711124
+        },
+        {
+          "name": "obj_3",
+          "tower_id": 3,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            4.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.302898112246076
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        }
+      }
+    },
+    {
+      "scene_id": 22,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "22_front_camera.png",
+        "side_camera": "22_side_camera.png",
+        "top_camera": "22_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "purple",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            -2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.381946284978911
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            -2.0,
+            1.05
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.5631828717514233
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            -2.0,
+            1.75
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.7422181245934
+        },
+        {
+          "name": "obj_3",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            -2.0,
+            2.45
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.8265468235925675
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        }
+      }
+    },
+    {
+      "scene_id": 23,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "23_front_camera.png",
+        "side_camera": "23_side_camera.png",
+        "top_camera": "23_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.3737873665724687
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "purple",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            0.0,
+            2.1
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.197309105784096
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 1,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            -2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.8040613239006882
+        },
+        {
+          "name": "obj_3",
+          "tower_id": 2,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "brown",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            0.0,
+            0.35
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 1.084758363147554
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        }
+      }
+    },
+    {
+      "scene_id": 24,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "24_front_camera.png",
+        "side_camera": "24_side_camera.png",
+        "top_camera": "24_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.9694174439947546
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 25,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "25_front_camera.png",
+        "side_camera": "25_side_camera.png",
+        "top_camera": "25_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.429685684470425
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 26,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "26_front_camera.png",
+        "side_camera": "26_side_camera.png",
+        "top_camera": "26_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "brown",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 1.629679009081631
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "purple",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            4.0,
+            1.75
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 0.272445519564314
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            4.0,
+            2.45
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.657004493982588
+        },
+        {
+          "name": "obj_3",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            4.0,
+            3.15
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.7069347996697619
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        }
+      }
+    },
+    {
+      "scene_id": 27,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "27_front_camera.png",
+        "side_camera": "27_side_camera.png",
+        "top_camera": "27_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.8613883798845041
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 28,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "28_front_camera.png",
+        "side_camera": "28_side_camera.png",
+        "top_camera": "28_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "green",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.82753209294565
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 29,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "29_front_camera.png",
+        "side_camera": "29_side_camera.png",
+        "top_camera": "29_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "red",
+          "material_name": "rubber",
+          "position": [
+            -4.0,
+            -2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.16600384011566
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "purple",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            -2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.4290750606398026
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 2,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "brown",
+          "material_name": "rubber",
+          "position": [
+            -4.0,
+            2.0,
+            0.7
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 5.226957972375616
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        }
+      }
+    },
+    {
+      "scene_id": 30,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "30_front_camera.png",
+        "side_camera": "30_side_camera.png",
+        "top_camera": "30_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "brown",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.6706559041253313
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 31,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "31_front_camera.png",
+        "side_camera": "31_side_camera.png",
+        "top_camera": "31_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            4.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.038139835939577
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "brown",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            4.0,
+            1.05
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 3.3842551196034774
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            4.0,
+            1.75
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.216349882158938
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        }
+      }
+    },
+    {
+      "scene_id": 32,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "32_front_camera.png",
+        "side_camera": "32_side_camera.png",
+        "top_camera": "32_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            -4.0,
+            4.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.2704744791589075
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 33,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "33_front_camera.png",
+        "side_camera": "33_side_camera.png",
+        "top_camera": "33_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "brown",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.5747568317167637
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            -4.0,
+            -2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.4144654655894349
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 2,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.580163912266715
+        },
+        {
+          "name": "obj_3",
+          "tower_id": 3,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            -2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.841214599519467
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        }
+      }
+    },
+    {
+      "scene_id": 34,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "34_front_camera.png",
+        "side_camera": "34_side_camera.png",
+        "top_camera": "34_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "red",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            -2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.9530012308627045
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "green",
+          "material_name": "rubber",
+          "position": [
+            -4.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.145848471988523
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 1,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            -4.0,
+            4.0,
+            2.1
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.1033127722476106
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        }
+      }
+    },
+    {
+      "scene_id": 35,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "35_front_camera.png",
+        "side_camera": "35_side_camera.png",
+        "top_camera": "35_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.774932364296674
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            2.0,
+            1.75
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.035033957776949
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 1,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            -4.0,
+            4.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.735713607675928
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        }
+      }
+    },
+    {
+      "scene_id": 36,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "36_front_camera.png",
+        "side_camera": "36_side_camera.png",
+        "top_camera": "36_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "purple",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.3027315807113704
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            0.0,
+            1.75
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.278616803466374
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 37,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "37_front_camera.png",
+        "side_camera": "37_side_camera.png",
+        "top_camera": "37_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            4.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.1457906151950157
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            0.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.9409543734865657
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 38,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "38_front_camera.png",
+        "side_camera": "38_side_camera.png",
+        "top_camera": "38_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "brown",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.279293161500507
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            0.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.39449980897439
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 1,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            0.0,
+            1.05
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.6956367539092339
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        }
+      }
+    },
+    {
+      "scene_id": 39,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "39_front_camera.png",
+        "side_camera": "39_side_camera.png",
+        "top_camera": "39_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            -2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.2331641788845924
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "green",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            -2.0,
+            1.4
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 2.1416166539828865
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 1,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            4.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.862880688178176
+        },
+        {
+          "name": "obj_3",
+          "tower_id": 2,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "purple",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 5.741695280663645
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        }
+      }
+    },
+    {
+      "scene_id": 40,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "40_front_camera.png",
+        "side_camera": "40_side_camera.png",
+        "top_camera": "40_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            0.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.7292938846544252
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.016405324942881
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 41,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "41_front_camera.png",
+        "side_camera": "41_side_camera.png",
+        "top_camera": "41_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "rubber",
+          "position": [
+            -4.0,
+            2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.615045201308795
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 1,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            4.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.296364095184003
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 2,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            -2.0,
+            2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.169784140389104
+        },
+        {
+          "name": "obj_3",
+          "tower_id": 3,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "green",
+          "material_name": "rubber",
+          "position": [
+            -4.0,
+            -2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.8828545276013715
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": false,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        }
+      }
+    },
+    {
+      "scene_id": 42,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "42_front_camera.png",
+        "side_camera": "42_side_camera.png",
+        "top_camera": "42_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.28928409471329863
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "brown",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            4.0,
+            1.75
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 2.3263010807136726
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "purple",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            4.0,
+            2.8
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.522530577963207
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": false,
+          "obj_2": true
+        }
+      }
+    },
+    {
+      "scene_id": 43,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "43_front_camera.png",
+        "side_camera": "43_side_camera.png",
+        "top_camera": "43_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.8979236365599714
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "purple",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            2.0,
+            2.1
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.1978464429567848
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 44,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "44_front_camera.png",
+        "side_camera": "44_side_camera.png",
+        "top_camera": "44_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            -4.0,
+            -2.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.2730170341734603
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 45,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "45_front_camera.png",
+        "side_camera": "45_side_camera.png",
+        "top_camera": "45_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            -4.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 4.1234294862838965
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "large",
+          "color_name": "yellow",
+          "material_name": "rubber",
+          "position": [
+            -4.0,
+            4.0,
+            2.1
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.9998223012267475
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 46,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "46_front_camera.png",
+        "side_camera": "46_side_camera.png",
+        "top_camera": "46_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "small",
+          "color_name": "brown",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            2.0,
+            0.35
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 4.06868323894364
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "cube",
+          "size_name": "small",
+          "color_name": "red",
+          "material_name": "metal",
+          "position": [
+            0.0,
+            2.0,
+            1.05
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.1865154695211335
+        },
+        {
+          "name": "obj_2",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "green",
+          "material_name": "rubber",
+          "position": [
+            0.0,
+            2.0,
+            2.1
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.319666796947535
+        },
+        {
+          "name": "obj_3",
+          "tower_id": 1,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 5.6315260248773855
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true,
+          "obj_2": true,
+          "obj_3": true
+        },
+        "top_camera": {
+          "obj_0": false,
+          "obj_1": false,
+          "obj_2": true,
+          "obj_3": true
+        }
+      }
+    },
+    {
+      "scene_id": 47,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "47_front_camera.png",
+        "side_camera": "47_side_camera.png",
+        "top_camera": "47_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "small",
+          "color_name": "blue",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            -2.0,
+            0.35
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 3.1396720124508652
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    },
+    {
+      "scene_id": 48,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "48_front_camera.png",
+        "side_camera": "48_side_camera.png",
+        "top_camera": "48_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "cylinder",
+          "size_name": "large",
+          "color_name": "brown",
+          "material_name": "metal",
+          "position": [
+            2.0,
+            4.0,
+            0.7
+          ],
+          "orientation": "horizontal",
+          "rotation_angle": 0.9616678928895982
+        },
+        {
+          "name": "obj_1",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "blue",
+          "material_name": "rubber",
+          "position": [
+            2.0,
+            4.0,
+            2.1
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 0.9907682284072088
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "side_camera": {
+          "obj_0": true,
+          "obj_1": true
+        },
+        "top_camera": {
+          "obj_0": true,
+          "obj_1": true
+        }
+      }
+    },
+    {
+      "scene_id": 49,
+      "coordinate_system": {
+        "x": "right",
+        "y": "front",
+        "z": "up"
+      },
+      "cameras": {
+        "front_camera": {
+          "position": [
+            8,
+            1,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "side_camera": {
+          "position": [
+            -1,
+            -8,
+            5
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 20
+        },
+        "top_camera": {
+          "position": [
+            -1,
+            1,
+            10
+          ],
+          "lookat": [
+            -1,
+            1,
+            1.5
+          ],
+          "up": [
+            0,
+            0,
+            1
+          ],
+          "focal": 18
+        }
+      },
+      "images": {
+        "front_camera": "49_front_camera.png",
+        "side_camera": "49_side_camera.png",
+        "top_camera": "49_top_camera.png"
+      },
+      "objects": [
+        {
+          "name": "obj_0",
+          "tower_id": 0,
+          "shape": "sphere",
+          "size_name": "large",
+          "color_name": "green",
+          "material_name": "metal",
+          "position": [
+            -2.0,
+            0.0,
+            0.7
+          ],
+          "orientation": "vertical",
+          "rotation_angle": 1.2629428418187134
+        }
+      ],
+      "visibility": {
+        "front_camera": {
+          "obj_0": true
+        },
+        "side_camera": {
+          "obj_0": true
+        },
+        "top_camera": {
+          "obj_0": true
+        }
+      }
+    }
+  ]
+}

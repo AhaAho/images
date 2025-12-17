@@ -1,0 +1,151 @@
+{
+  "scene_id": 98,
+  "coordinate_system": {
+    "x": "right",
+    "y": "front",
+    "z": "up"
+  },
+  "cameras": {
+    "front_camera": {
+      "position": [
+        8,
+        1,
+        5
+      ],
+      "lookat": [
+        -1,
+        1,
+        1.5
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "focal": 20
+    },
+    "side_camera": {
+      "position": [
+        -1,
+        -8,
+        5
+      ],
+      "lookat": [
+        -1,
+        1,
+        1.5
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "focal": 20
+    },
+    "top_camera": {
+      "position": [
+        -1,
+        1,
+        10
+      ],
+      "lookat": [
+        -1,
+        1,
+        1.5
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "focal": 18
+    }
+  },
+  "images": {
+    "front_camera": "98_front_camera.png",
+    "side_camera": "98_side_camera.png",
+    "top_camera": "98_top_camera.png"
+  },
+  "objects": [
+    {
+      "name": "obj_0",
+      "tower_id": 0,
+      "shape": "cylinder",
+      "size_name": "small",
+      "color_name": "brown",
+      "material_name": "metal",
+      "position": [
+        -4.0,
+        -2.0,
+        0.35
+      ],
+      "orientation": "horizontal",
+      "rotation_angle": 4.69922895240845
+    },
+    {
+      "name": "obj_1",
+      "tower_id": 1,
+      "shape": "cube",
+      "size_name": "small",
+      "color_name": "red",
+      "material_name": "rubber",
+      "position": [
+        -2.0,
+        -2.0,
+        0.35
+      ],
+      "orientation": "vertical",
+      "rotation_angle": 0.6831853148168996
+    },
+    {
+      "name": "obj_2",
+      "tower_id": 1,
+      "shape": "cylinder",
+      "size_name": "large",
+      "color_name": "brown",
+      "material_name": "metal",
+      "position": [
+        -2.0,
+        -2.0,
+        1.4
+      ],
+      "orientation": "horizontal",
+      "rotation_angle": 0.0061875326934474366
+    },
+    {
+      "name": "obj_3",
+      "tower_id": 2,
+      "shape": "cylinder",
+      "size_name": "large",
+      "color_name": "brown",
+      "material_name": "rubber",
+      "position": [
+        2.0,
+        4.0,
+        0.7
+      ],
+      "orientation": "horizontal",
+      "rotation_angle": 1.86336222473867
+    }
+  ],
+  "visibility": {
+    "front_camera": {
+      "obj_0": true,
+      "obj_1": true,
+      "obj_2": true,
+      "obj_3": true
+    },
+    "side_camera": {
+      "obj_0": true,
+      "obj_1": true,
+      "obj_2": true,
+      "obj_3": true
+    },
+    "top_camera": {
+      "obj_0": true,
+      "obj_1": false,
+      "obj_2": true,
+      "obj_3": true
+    }
+  }
+}

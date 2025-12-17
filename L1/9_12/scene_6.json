@@ -1,0 +1,259 @@
+{
+  "scene_id": 6,
+  "coordinate_system": {
+    "x": "right",
+    "y": "front",
+    "z": "up"
+  },
+  "cameras": {
+    "front_camera": {
+      "position": [
+        8,
+        1,
+        5
+      ],
+      "lookat": [
+        -1,
+        1,
+        1.5
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "focal": 20
+    },
+    "side_camera": {
+      "position": [
+        -1,
+        -8,
+        5
+      ],
+      "lookat": [
+        -1,
+        1,
+        1.5
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "focal": 20
+    },
+    "top_camera": {
+      "position": [
+        -1,
+        1,
+        10
+      ],
+      "lookat": [
+        -1,
+        1,
+        1.5
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "focal": 18
+    }
+  },
+  "images": {
+    "front_camera": "6_front_camera.png",
+    "side_camera": "6_side_camera.png",
+    "top_camera": "6_top_camera.png"
+  },
+  "objects": [
+    {
+      "name": "obj_0",
+      "tower_id": 0,
+      "shape": "cylinder",
+      "size_name": "small",
+      "color_name": "purple",
+      "material_name": "rubber",
+      "position": [
+        0.0,
+        0.0,
+        0.35
+      ],
+      "orientation": "horizontal",
+      "rotation_angle": 0.10989461333320842
+    },
+    {
+      "name": "obj_1",
+      "tower_id": 0,
+      "shape": "cube",
+      "size_name": "small",
+      "color_name": "yellow",
+      "material_name": "rubber",
+      "position": [
+        0.0,
+        0.0,
+        1.05
+      ],
+      "orientation": "vertical",
+      "rotation_angle": 5.601920052621099
+    },
+    {
+      "name": "obj_2",
+      "tower_id": 0,
+      "shape": "cube",
+      "size_name": "large",
+      "color_name": "red",
+      "material_name": "rubber",
+      "position": [
+        0.0,
+        0.0,
+        2.1
+      ],
+      "orientation": "vertical",
+      "rotation_angle": 1.7898355020581471
+    },
+    {
+      "name": "obj_3",
+      "tower_id": 0,
+      "shape": "cube",
+      "size_name": "large",
+      "color_name": "yellow",
+      "material_name": "metal",
+      "position": [
+        0.0,
+        0.0,
+        3.5
+      ],
+      "orientation": "vertical",
+      "rotation_angle": 1.8785239820439021
+    },
+    {
+      "name": "obj_4",
+      "tower_id": 1,
+      "shape": "cube",
+      "size_name": "small",
+      "color_name": "yellow",
+      "material_name": "metal",
+      "position": [
+        2.0,
+        -2.0,
+        0.35
+      ],
+      "orientation": "vertical",
+      "rotation_angle": 4.97649802933304
+    },
+    {
+      "name": "obj_5",
+      "tower_id": 1,
+      "shape": "cylinder",
+      "size_name": "small",
+      "color_name": "brown",
+      "material_name": "rubber",
+      "position": [
+        2.0,
+        -2.0,
+        1.05
+      ],
+      "orientation": "horizontal",
+      "rotation_angle": 2.038708890686989
+    },
+    {
+      "name": "obj_6",
+      "tower_id": 1,
+      "shape": "sphere",
+      "size_name": "small",
+      "color_name": "blue",
+      "material_name": "metal",
+      "position": [
+        2.0,
+        -2.0,
+        1.75
+      ],
+      "orientation": "vertical",
+      "rotation_angle": 5.433135596617809
+    },
+    {
+      "name": "obj_7",
+      "tower_id": 2,
+      "shape": "cylinder",
+      "size_name": "large",
+      "color_name": "purple",
+      "material_name": "metal",
+      "position": [
+        0.0,
+        -2.0,
+        0.7
+      ],
+      "orientation": "horizontal",
+      "rotation_angle": 2.811804795503476
+    },
+    {
+      "name": "obj_8",
+      "tower_id": 2,
+      "shape": "cylinder",
+      "size_name": "large",
+      "color_name": "brown",
+      "material_name": "rubber",
+      "position": [
+        0.0,
+        -2.0,
+        2.1
+      ],
+      "orientation": "vertical",
+      "rotation_angle": 3.4446300925353524
+    },
+    {
+      "name": "obj_9",
+      "tower_id": 2,
+      "shape": "cube",
+      "size_name": "small",
+      "color_name": "yellow",
+      "material_name": "metal",
+      "position": [
+        0.0,
+        -2.0,
+        3.15
+      ],
+      "orientation": "vertical",
+      "rotation_angle": 2.244177830051813
+    }
+  ],
+  "visibility": {
+    "front_camera": {
+      "obj_0": true,
+      "obj_1": true,
+      "obj_2": true,
+      "obj_3": true,
+      "obj_4": true,
+      "obj_5": true,
+      "obj_6": true,
+      "obj_7": true,
+      "obj_8": true,
+      "obj_9": true
+    },
+    "side_camera": {
+      "obj_0": false,
+      "obj_1": false,
+      "obj_2": true,
+      "obj_3": true,
+      "obj_4": true,
+      "obj_5": true,
+      "obj_6": true,
+      "obj_7": true,
+      "obj_8": true,
+      "obj_9": true
+    },
+    "top_camera": {
+      "obj_0": false,
+      "obj_1": false,
+      "obj_2": true,
+      "obj_3": true,
+      "obj_4": true,
+      "obj_5": true,
+      "obj_6": true,
+      "obj_7": true,
+      "obj_8": true,
+      "obj_9": true
+    }
+  }
+}
