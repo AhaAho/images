@@ -1,0 +1,383 @@
+{
+  "scene_id": 197,
+  "level_id": 3,
+  "coordinate_system": {
+    "x": "left",
+    "y": "front",
+    "z": "up"
+  },
+  "cameras": {
+    "front_camera": {
+      "position": [
+        -1.0,
+        9.0,
+        4.0
+      ],
+      "lookat": [
+        -1.0,
+        1.0,
+        1.4
+      ],
+      "focal_length": 20.0
+    },
+    "side_camera": {
+      "position": [
+        -9.0,
+        1.0,
+        4.0
+      ],
+      "lookat": [
+        -1.0,
+        1.0,
+        1.4
+      ],
+      "focal_length": 20.0
+    },
+    "top_camera": {
+      "position": [
+        -1.0,
+        1.0,
+        9.6
+      ],
+      "lookat": [
+        -1.0,
+        1.0,
+        1.4
+      ],
+      "focal_length": 18.0
+    }
+  },
+  "images": {
+    "front_camera": "197_front_camera.png",
+    "side_camera": "197_side_camera.png",
+    "top_camera": "197_top_camera.png"
+  },
+  "objects": [
+    {
+      "name": "obj_0",
+      "tower_id": 0,
+      "z_layer": 0,
+      "shape": "sphere",
+      "size_name": "small",
+      "color_name": "gray",
+      "material_name": "metal",
+      "position": [
+        -2.0,
+        -2.0,
+        0.35
+      ]
+    },
+    {
+      "name": "obj_1",
+      "tower_id": 0,
+      "z_layer": 1,
+      "shape": "sphere",
+      "size_name": "small",
+      "color_name": "red",
+      "material_name": "rubber",
+      "position": [
+        -2.0,
+        -2.0,
+        1.05
+      ]
+    },
+    {
+      "name": "obj_2",
+      "tower_id": 1,
+      "z_layer": 0,
+      "shape": "cube",
+      "size_name": "small",
+      "color_name": "green",
+      "material_name": "metal",
+      "position": [
+        -2.0,
+        2.0,
+        0.35
+      ]
+    },
+    {
+      "name": "obj_3",
+      "tower_id": 2,
+      "z_layer": 0,
+      "shape": "sphere",
+      "size_name": "large",
+      "color_name": "red",
+      "material_name": "metal",
+      "position": [
+        -4.0,
+        0.0,
+        0.7
+      ]
+    },
+    {
+      "name": "obj_4",
+      "tower_id": 2,
+      "z_layer": 1,
+      "shape": "sphere",
+      "size_name": "large",
+      "color_name": "red",
+      "material_name": "metal",
+      "position": [
+        -4.0,
+        0.0,
+        2.1
+      ]
+    },
+    {
+      "name": "obj_5",
+      "tower_id": 3,
+      "z_layer": 0,
+      "shape": "cylinder",
+      "size_name": "large",
+      "color_name": "cyan",
+      "material_name": "rubber",
+      "position": [
+        2.0,
+        2.0,
+        0.7
+      ]
+    }
+  ],
+  "visibility_stats": {
+    "front_camera": {
+      "obj_0": {
+        "visible_pixels": 227,
+        "full_pixels": 232,
+        "visibility_ratio": 0.9784,
+        "is_visible": true,
+        "bbox": [
+          250,
+          272,
+          265,
+          288
+        ],
+        "distance": 11.633
+      },
+      "obj_1": {
+        "visible_pixels": 247,
+        "full_pixels": 247,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          232,
+          272,
+          249,
+          289
+        ],
+        "distance": 11.433
+      },
+      "obj_2": {
+        "visible_pixels": 1082,
+        "full_pixels": 1082,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          285,
+          275,
+          323,
+          310
+        ],
+        "distance": 7.958
+      },
+      "obj_3": {
+        "visible_pixels": 1415,
+        "full_pixels": 1424,
+        "visibility_ratio": 0.9937,
+        "is_visible": true,
+        "bbox": [
+          246,
+          324,
+          286,
+          366
+        ],
+        "distance": 10.044
+      },
+      "obj_4": {
+        "visible_pixels": 1576,
+        "full_pixels": 1576,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          204,
+          327,
+          246,
+          372
+        ],
+        "distance": 9.675
+      },
+      "obj_5": {
+        "visible_pixels": 3428,
+        "full_pixels": 3428,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          260,
+          107,
+          327,
+          176
+        ],
+        "distance": 8.3
+      }
+    },
+    "side_camera": {
+      "obj_0": {
+        "visible_pixels": 546,
+        "full_pixels": 561,
+        "visibility_ratio": 0.9733,
+        "is_visible": true,
+        "bbox": [
+          291,
+          352,
+          316,
+          379
+        ],
+        "distance": 8.445
+      },
+      "obj_1": {
+        "visible_pixels": 586,
+        "full_pixels": 586,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          267,
+          355,
+          292,
+          382
+        ],
+        "distance": 8.167
+      },
+      "obj_2": {
+        "visible_pixels": 1048,
+        "full_pixels": 1048,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          285,
+          202,
+          323,
+          236
+        ],
+        "distance": 7.958
+      },
+      "obj_3": {
+        "visible_pixels": 3802,
+        "full_pixels": 3976,
+        "visibility_ratio": 0.9562,
+        "is_visible": true,
+        "bbox": [
+          303,
+          271,
+          371,
+          340
+        ],
+        "distance": 6.074
+      },
+      "obj_4": {
+        "visible_pixels": 4518,
+        "full_pixels": 4518,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          233,
+          272,
+          307,
+          347
+        ],
+        "distance": 5.442
+      },
+      "obj_5": {
+        "visible_pixels": 1291,
+        "full_pixels": 1291,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          232,
+          211,
+          266,
+          248
+        ],
+        "distance": 11.528
+      }
+    },
+    "top_camera": {
+      "obj_0": {
+        "visible_pixels": 119,
+        "full_pixels": 314,
+        "visibility_ratio": 0.379,
+        "is_visible": true,
+        "bbox": [
+          168,
+          274,
+          182,
+          292
+        ],
+        "distance": 9.776
+      },
+      "obj_1": {
+        "visible_pixels": 366,
+        "full_pixels": 366,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          155,
+          275,
+          176,
+          296
+        ],
+        "distance": 9.116
+      },
+      "obj_2": {
+        "visible_pixels": 438,
+        "full_pixels": 438,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          270,
+          270,
+          297,
+          297
+        ],
+        "distance": 9.357
+      },
+      "obj_3": {
+        "visible_pixels": 465,
+        "full_pixels": 1351,
+        "visibility_ratio": 0.3442,
+        "is_visible": true,
+        "bbox": [
+          207,
+          322,
+          246,
+          350
+        ],
+        "distance": 9.445
+      },
+      "obj_4": {
+        "visible_pixels": 1964,
+        "full_pixels": 1964,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          197,
+          333,
+          245,
+          384
+        ],
+        "distance": 8.139
+      },
+      "obj_5": {
+        "visible_pixels": 1826,
+        "full_pixels": 1826,
+        "visibility_ratio": 1.0,
+        "is_visible": true,
+        "bbox": [
+          264,
+          148,
+          308,
+          189
+        ],
+        "distance": 9.445
+      }
+    }
+  }
+}
